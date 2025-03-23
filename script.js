@@ -49,7 +49,7 @@ window.loginUser = function() {
 
     signInWithEmailAndPassword(auth, email, password)
         .then(() => {
-            window.location.href = "https://judexxx158.github.io/LoginAuth/dashboard.html"; // ✅ Updated GitHub Pages URL
+            window.location.href = "https://judexxx158.github.io/LoginAuth/Dashboard.html";
         })
         .catch((error) => {
             alert(error.message);
