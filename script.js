@@ -2,21 +2,21 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
-// Firebase Configuration (Replace with your actual Firebase config)
+// 🔥 Updated Firebase Configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAZ5v9ErpfQxSuIlyJvKKdRUce-bJ4bEbQ",
-    authDomain: "loginsignupapp-2583f.firebaseapp.com",
-    projectId: "loginsignupapp-2583f",
-    storageBucket: "loginsignupapp-2583f.firebasestorage.app",
-    messagingSenderId: "8873065sc82781",
-    appId: "1:887306582781:web:47cb6c222379450ad1dc94"
+    apiKey: "AIzaSyCJ5zpZWO-qF1HvP73esHpnGBSL3ZmyOos",
+    authDomain: "login-and-sign-up-2a4f9.firebaseapp.com",
+    projectId: "login-and-sign-up-2a4f9",
+    storageBucket: "login-and-sign-up-2a4f9.appspot.com", // 🔄 Fixed incorrect storageBucket
+    messagingSenderId: "348338071623",
+    appId: "1:348338071623:web:c929b6d54203dd6c3ce962" // 🔄 Fixed incorrect appId format
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-// Function to Register a New User
+// ✅ Function to Register a New User
 window.registerUser = function() {
     const email = document.getElementById("signup-email").value;
     const password = document.getElementById("signup-password").value;
@@ -42,27 +42,27 @@ window.registerUser = function() {
         });
 };
 
-// Function to Log In Users
+// ✅ Function to Log In Users
 window.loginUser = function() {
     const email = document.getElementById("login-email").value;
     const password = document.getElementById("login-password").value;
 
     signInWithEmailAndPassword(auth, email, password)
         .then(() => {
-            window.location.href = "dashboard.html"; // ✅ Redirect to profile
+            window.location.href = "https://judexxx158.github.io/LoginAuth/dashboard.html"; // ✅ Updated GitHub Pages URL
         })
         .catch((error) => {
             alert(error.message);
         });
 };
 
-// Show Signup Form
+// ✅ Show Signup Form
 window.showSignup = function() {
     document.getElementById("login-box").classList.add("hidden");
     document.getElementById("signup-box").classList.remove("hidden");
 };
 
-// Show Login Form
+// ✅ Show Login Form
 window.showLogin = function() {
     document.getElementById("signup-box").classList.add("hidden");
     document.getElementById("login-box").classList.remove("hidden");
