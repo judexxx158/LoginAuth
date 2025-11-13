@@ -1,0 +1,32 @@
+{
+  "users": {
+    "IT21A": {
+      "password": "IT21A123",
+      "role": "student"
+    },
+    "IT21B": {
+      "password": "IT21B123",
+      "role": "student"
+    },
+    "IT21D": {
+      "password": "IT21D123",
+      "role": "student"
+    },
+    "teacher1": {
+      "password": "teach123",
+      "role": "teacher"
+    }
+  },
+  "assignments": {
+    "IT21A": {
+      "-N001": {
+        "subject": "Programming 1",
+        "title": "Create Login Page",
+        "description": "Make a simple login form using HTML, CSS, and JavaScript.",
+        "dueDate": "2025-11-15",
+        "dueTime": "23:59",
+        "status": "active"
+      }
+    }
+  }
+}
